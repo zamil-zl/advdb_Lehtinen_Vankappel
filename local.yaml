@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "local"
+  cluster:
+    server: "https://rancher.kube.isc.heia-fr.ch/k8s/clusters/local"
+
+users:
+- name: "local"
+  user:
+    token: "kubeconfig-u-6crkkhws4m:mct5jb8ssxcfh54khs2wxrjrkcxzkrxjdb6xbkxkxdd95xl8cll9mh"
+
+
+contexts:
+- name: "local"
+  context:
+    user: "local"
+    cluster: "local"
+
+current-context: "local"
